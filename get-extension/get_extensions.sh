@@ -18,6 +18,7 @@ read -p "what is your surname/family name  : " surname
 PS3="please select what phone you need "
 select phone in headset handheld;
 do
+echo " "
 echo "your selected phone is $phone"
 break
 done 
@@ -25,6 +26,7 @@ echo " "
 PS3="please select your Department "
 select dep in finance sales "customer service" engineering ;
 do
+echo " "
 echo "your Department is $dep"
 break
 done 
