@@ -15,12 +15,25 @@
 read -p "what is your first name : " name 
 echo " "
 read -p "what is your surname/family name  : " surname
+PS3="please select what phone you need "
+select phone in headset handheld;
+do
+echo "your selected phone is $phone"
+break
+done 
+echo " "
+PS3="please select your Department "
+select dep in finance sales "customer service" engineering ;
+do
+echo "your Department is $dep"
+break
+done 
 echo " "
 read -N 4 -p "what is your extension number   : " exnum
 echo " "
 read -s -N 4 -p  "What access code would you like to use when dialing in: " code
 echo " "
-echo "$name,$surname,$exnum,$code" >> extensions.csv​
+echo "$name,$surname,$phone,$dep,$exnum,$code" >> extensions.csv​
 
  
 
