@@ -9,7 +9,7 @@
 #'get extension : take the name and surname and extension number and the access code save its to the extensions.csv file ' 
 
 #Usage
-#''
+#'name , surname ,exnum ,code '
 
 
 read -p "what is your first name : " name 
