@@ -20,6 +20,7 @@ select phone in headset handheld;
 do
 echo " "
 echo "your selected phone is $phone"
+echo "--------------------------------------"
 break
 done 
 echo " "
@@ -28,6 +29,7 @@ select dep in finance sales "customer service" engineering ;
 do
 echo " "
 echo "your Department is $dep"
+echo "--------------------------------------"
 break
 done 
 echo " "
