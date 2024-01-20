@@ -9,13 +9,13 @@
 #'make a timer ' 
 
 #Usage
-#'-m + number of minutes || -s + number of second '
+#'-m + number of minutes , -s + number of second '
 total_second=0
 while getopts "m:s:" opt; do
 
     case "$opt" in
-      m) total_second=$((OPTARG * 60)) ;;
-      s) total_second=$((OPTARG)) ;;
+      m) total_second=$((total_second+OPTARG * 60)) ;;
+      s) total_second=$((total_second+OPTARG)) ;;
       \?) echo " please enter a valid option ";;
     esac  
 done
